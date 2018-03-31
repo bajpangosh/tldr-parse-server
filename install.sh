@@ -5,7 +5,7 @@ echo "deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y mongodb-org python nodejs build-essential libkrb5-dev
 sudo service mongod start
-sudo npm install -g parse-server mongodb-runner parse-dashboard pm2
+sudo npm install -g parse-server mongodb-runner parse-dashboard i pm2@latest --no-optional -g --no-shrinkwrap
 git clone https://github.com/ParsePlatform/parse-server-example.git
 cd parse-server-example
 npm install
